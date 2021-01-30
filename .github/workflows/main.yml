@@ -13,4 +13,4 @@ jobs:
       with:
         server: s176.goserver.host
         username: web59f1
-        password: ${{ WEBGO_FTP_PWD }}
+        password: ${{ secrets.WEBGO_FTP_PWD }}
