@@ -14,6 +14,6 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: s176.goserver.host
-        username: web59f1
+        server: ${{ secrets.WEBGO_HOST }}
+        username: ${{ secrets.WEBGO_FTP_USR }}
         password: ${{ secrets.WEBGO_FTP_PWD }}
